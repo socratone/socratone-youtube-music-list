@@ -42,6 +42,7 @@ const All = () => {
             artist={music.artist}
             title={music.title}
             videoId={music.videoId}
+            rating={music.rating}
             onPlay={handlePlay}
             onStop={handleStop}
           />
