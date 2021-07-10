@@ -62,8 +62,8 @@ const MusicItem = ({
 };
 
 const Container = styled.article`
-  border: 1px solid gainsboro;
-  border-radius: 3px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
   overflow: hidden;
 `;
 
@@ -87,7 +87,7 @@ const Title = styled.h2`
 `;
 
 const Artist = styled.p`
-  color: grey;
+  color: var(--color-font-sub);
   font-size: 14px;
   text-align: center;
   margin-bottom: 5px;

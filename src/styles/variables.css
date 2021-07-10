@@ -1,0 +1,10 @@
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-body: #161616;
+  --color-font: white;
+  --color-font-sub: rgb(192, 192, 192);
+  --color-border: rgb(61, 61, 61);
+  --border-radius: 8px;
+}

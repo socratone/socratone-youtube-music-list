@@ -13,6 +13,7 @@ function App() {
             <Row gap={10}>
               <LinkItem to="/">All</LinkItem>
               <LinkItem to="/ballad">Ballad</LinkItem>
+              <LinkItem to="/r&b">R&amp;B</LinkItem>
               <LinkItem to="/rock">Rock</LinkItem>
               <LinkItem to="/metal">Metal</LinkItem>
             </Row>
@@ -22,6 +23,9 @@ function App() {
         <Switch>
           <Route path="/ballad">
             <Genre genre="ballad" />
+          </Route>
+          <Route path="/r&b">
+            <Genre genre="r&b" />
           </Route>
           <Route path="/rock">
             <Genre genre="rock" />
@@ -39,7 +43,7 @@ function App() {
 }
 
 const StyledLink = styled(Link)`
-  color: black;
+  color: var(--color-font);
 `;
 
 type LinkItemProps = {
@@ -57,7 +61,7 @@ const Container = styled.div`
 
 const Header = styled.header`
   height: 50px;
-  border-bottom: gainsboro 1px solid;
+  border-bottom: 1px solid var(--color-border);
 `;
 
 const Nav = styled.nav`
