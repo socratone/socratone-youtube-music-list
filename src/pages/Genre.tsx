@@ -5,18 +5,23 @@ import MainContainer from '../components/layout/MainContainer';
 import MainGrid from '../components/layout/MainGrid';
 import MusicItem from '../components/MusicItem';
 import data from '../data/musics';
-import { Music } from '../types/music';
+import { Genre as GenreType, Music } from '../types/music';
 
-const All = () => {
+type GenreProps = {
+  genre: GenreType;
+};
+
+const Genre = ({ genre }: GenreProps) => {
   const [opens, setOpens] = useState<boolean[]>([]);
   const [musics, setMusics] = useState<Music[]>([]);
 
   useEffect(() => {
-    setMusics(data);
+    const filteredData = data.filter((music) => music.genre === genre);
+    setMusics(filteredData);
 
     const initialOpens = data.map(() => false);
     setOpens(initialOpens);
-  }, []);
+  }, [genre]);
 
   const handlePlay = (videoId: string) => {
     const newOpens = _.cloneDeep(opens);
@@ -51,4 +56,4 @@ const All = () => {
   );
 };
 
-export default All;
+export default Genre;

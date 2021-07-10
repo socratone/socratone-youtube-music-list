@@ -2,9 +2,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Row from './components/layout/Row';
 import All from './pages/All';
-import Ballad from './pages/Ballad';
-import Metal from './pages/Metal';
-import Rock from './pages/Rock';
+import Genre from './pages/Genre';
 
 function App() {
   return (
@@ -23,13 +21,13 @@ function App() {
 
         <Switch>
           <Route path="/ballad">
-            <Ballad />
+            <Genre genre="ballad" />
           </Route>
           <Route path="/rock">
-            <Rock />
+            <Genre genre="rock" />
           </Route>
           <Route path="/metal">
-            <Metal />
+            <Genre genre="metal" />
           </Route>
           <Route path="/">
             <All />
