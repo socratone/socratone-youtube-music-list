@@ -10,11 +10,14 @@ function App() {
       <Container>
         <Header>
           <Nav>
-            <Row gap={10}>
+            <Row gap={15}>
               <LinkItem to="/">All</LinkItem>
               <LinkItem to="/ballad">Ballad</LinkItem>
+              <LinkItem to="/popballad">Pop Ballad</LinkItem>
+              <LinkItem to="/pop">Pop</LinkItem>
               <LinkItem to="/r&b">R&amp;B</LinkItem>
               <LinkItem to="/rock">Rock</LinkItem>
+              <LinkItem to="/poprock">Pop Rock</LinkItem>
               <LinkItem to="/metal">Metal</LinkItem>
             </Row>
           </Nav>
@@ -23,6 +26,15 @@ function App() {
         <Switch>
           <Route path="/ballad">
             <Genre genre="ballad" />
+          </Route>
+          <Route path="/popballad">
+            <Genre genre="pop ballad" />
+          </Route>
+          <Route path="/pop">
+            <Genre genre="pop" />
+          </Route>
+          <Route path="/poprock">
+            <Genre genre="pop rock" />
           </Route>
           <Route path="/r&b">
             <Genre genre="r&b" />

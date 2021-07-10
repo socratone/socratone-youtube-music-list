@@ -1,6 +1,6 @@
 import { Music } from '../types/music';
 
-const musics: Music[] = [
+const metal: Music[] = [
   {
     videoId: 'LlBepoJLkCk',
     artist: '조필성',
@@ -38,4 +38,4 @@ const musics: Music[] = [
   },
 ];
 
-export default musics;
+export default metal;

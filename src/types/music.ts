@@ -1,4 +1,12 @@
-export type Genre = 'r&b' | 'metal' | 'ballad' | 'rock' | 'classic';
+export type Genre =
+  | 'r&b'
+  | 'metal'
+  | 'ballad'
+  | 'rock'
+  | 'classic'
+  | 'pop'
+  | 'pop rock'
+  | 'pop ballad';
 
 type Tag = '애절한' | '평화로운' | 'emotional';
 

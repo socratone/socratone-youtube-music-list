@@ -1,5 +1,9 @@
 import { Music } from '../types/music';
-import metals from './metals';
+import metal from './metal';
+import rock from './rock';
+import pop from './pop';
+import popRock from './popRock';
+import popBallad from './popBallad';
 
 const musics: Music[] = [
   {
@@ -8,22 +12,6 @@ const musics: Music[] = [
     title: 'For Once In My Life',
     genre: 'r&b',
     tags: [],
-    rating: 5,
-  },
-  {
-    videoId: 'O71zRU_sj4k',
-    artist: '이문세, 김윤희',
-    title: '휘파람',
-    genre: 'rock',
-    tags: ['애절한'],
-    rating: 5,
-  },
-  {
-    videoId: 'Lx61vBPj_iY',
-    artist: '이문세, 김윤희',
-    title: '그녀의 웃음소리뿐',
-    genre: 'rock',
-    tags: ['애절한'],
     rating: 5,
   },
   {
@@ -44,4 +32,9 @@ const musics: Music[] = [
   },
 ];
 
-export default musics.concat(metals);
+export default musics
+  .concat(metal)
+  .concat(rock)
+  .concat(pop)
+  .concat(popRock)
+  .concat(popBallad);
