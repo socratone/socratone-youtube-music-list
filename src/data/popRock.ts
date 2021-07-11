@@ -163,8 +163,8 @@ const popRock: Music[] = [
   },
   {
     videoId: 'cRM70Jw7F4M',
-    artist: 'My Life Would Suck Without You',
-    title: 'Stronger',
+    artist: 'Kelly Clarkson',
+    title: 'My Life Would Suck Without You',
     genre: 'pop rock',
     tags: ['애절한'],
     rating: 5,
