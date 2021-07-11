@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Row from './components/layout/Row';
 import All from './pages/All';
-import Genre from './pages/Genre';
+import Emotion from './pages/Emotion';
 
 function App() {
   return (
@@ -12,38 +12,14 @@ function App() {
           <Nav>
             <Row gap={15}>
               <LinkItem to="/">All</LinkItem>
-              <LinkItem to="/ballad">Ballad</LinkItem>
-              <LinkItem to="/popballad">Pop Ballad</LinkItem>
-              <LinkItem to="/pop">Pop</LinkItem>
-              <LinkItem to="/r&b">R&amp;B</LinkItem>
-              <LinkItem to="/rock">Rock</LinkItem>
-              <LinkItem to="/poprock">Pop Rock</LinkItem>
-              <LinkItem to="/metal">Metal</LinkItem>
+              <LinkItem to="/sadness">슬픔</LinkItem>
             </Row>
           </Nav>
         </Header>
 
         <Switch>
-          <Route path="/ballad">
-            <Genre genre="ballad" />
-          </Route>
-          <Route path="/popballad">
-            <Genre genre="pop ballad" />
-          </Route>
-          <Route path="/pop">
-            <Genre genre="pop" />
-          </Route>
-          <Route path="/poprock">
-            <Genre genre="pop rock" />
-          </Route>
-          <Route path="/r&b">
-            <Genre genre="r&b" />
-          </Route>
-          <Route path="/rock">
-            <Genre genre="rock" />
-          </Route>
-          <Route path="/metal">
-            <Genre genre="metal" />
+          <Route path="/sadness">
+            <Emotion emotion="슬픔" />
           </Route>
           <Route path="/">
             <All />

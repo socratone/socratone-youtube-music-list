@@ -5,23 +5,23 @@ import MainContainer from '../components/layout/MainContainer';
 import MainGrid from '../components/layout/MainGrid';
 import MusicItem from '../components/MusicItem';
 import data from '../data/musics';
-import { Genre as GenreType, Music } from '../types/music';
+import { Emotion as EmotionType, Music } from '../types/music';
 
-type GenreProps = {
-  genre: GenreType;
+type EmotionProps = {
+  emotion: EmotionType;
 };
 
-const Genre = ({ genre }: GenreProps) => {
+const Emotion = ({ emotion }: EmotionProps) => {
   const [opens, setOpens] = useState<boolean[]>([]);
   const [musics, setMusics] = useState<Music[]>([]);
 
   useEffect(() => {
-    const filteredData = data.filter((music) => music.genre === genre);
+    const filteredData = data.filter((music) => music.emotion === emotion);
     setMusics(filteredData);
 
     const initialOpens = data.map(() => false);
     setOpens(initialOpens);
-  }, [genre]);
+  }, [emotion]);
 
   const handlePlay = (videoId: string) => {
     const newOpens = _.cloneDeep(opens);
@@ -57,4 +57,4 @@ const Genre = ({ genre }: GenreProps) => {
   );
 };
 
-export default Genre;
+export default Emotion;
