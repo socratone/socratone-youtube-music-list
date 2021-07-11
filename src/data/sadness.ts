@@ -22,6 +22,13 @@ const sadness: Music[] = [
     emotion: '슬픔',
     rating: 4,
   },
+  {
+    videoId: 'm3DZsBw5bnE',
+    artist: 'AKMU',
+    title: '어떻게 이별까지 사랑하겠어, 널 사랑하는 거지',
+    emotion: '슬픔',
+    rating: 4,
+  },
 ];
 
 export default sadness;
