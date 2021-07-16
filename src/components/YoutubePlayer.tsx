@@ -1,16 +1,22 @@
+import YouTube from 'react-youtube';
 import styled from 'styled-components';
 
 type YoutubePlayerProps = {
   videoId: string;
+  onEnd: () => void;
 };
 
-const YoutubePlayer = ({ videoId }: YoutubePlayerProps) => {
+const YoutubePlayer = ({ videoId, onEnd }: YoutubePlayerProps) => {
   return (
     <Container>
-      <Iframe
-        // type="text/html"
-        src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
-        // frameborder="0"
+      <StyledYoutube
+        videoId={videoId}
+        opts={{
+          playerVars: {
+            autoplay: 1,
+          },
+        }}
+        onEnd={onEnd}
       />
     </Container>
   );
@@ -22,7 +28,7 @@ const Container = styled.div`
   padding-bottom: 56.25%; /* 16:9 비율 */
 `;
 
-const Iframe = styled.iframe`
+const StyledYoutube = styled(YouTube)`
   position: absolute;
   width: 100%; /* 부모에 맞게 꽉 채운다. */
   height: 100%;

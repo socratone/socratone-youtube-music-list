@@ -12,6 +12,7 @@ type MusicItemProps = {
   onPlay: (videoId: string) => void;
   onStop: () => void;
   rating: number;
+  onEnd: () => void;
 };
 
 const MusicItem = ({
@@ -22,6 +23,7 @@ const MusicItem = ({
   onPlay,
   onStop,
   rating,
+  onEnd,
 }: MusicItemProps) => {
   const setStar = () => {
     let stars = [];
@@ -39,7 +41,7 @@ const MusicItem = ({
           alt={title}
         />
       )}
-      {open && <YoutubePlayer videoId={videoId} />}
+      {open && <YoutubePlayer videoId={videoId} onEnd={onEnd} />}
 
       <Footer>
         <Title>{title}</Title>

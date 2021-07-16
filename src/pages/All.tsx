@@ -18,18 +18,27 @@ const All = () => {
     setOpens(initialOpens);
   }, []);
 
-  const handlePlay = (videoId: string) => {
+  const playVideo = (index: number) => {
     const newOpens = _.cloneDeep(opens);
     const resetedOpens = newOpens.map(() => false);
-    const clickedIndex = musics.findIndex((music) => music.videoId === videoId);
-    resetedOpens[clickedIndex] = true;
+    resetedOpens[index] = true;
     setOpens(resetedOpens);
+  };
+
+  const handlePlay = (videoId: string) => {
+    const clickedIndex = musics.findIndex((music) => music.videoId === videoId);
+    playVideo(clickedIndex);
   };
 
   const handleStop = () => {
     const newOpens = _.cloneDeep(opens);
     const resetedOpens = newOpens.map(() => false);
     setOpens(resetedOpens);
+  };
+
+  const handleEnd = (index: number) => {
+    if (index === opens.length - 1) playVideo(0);
+    else playVideo(index + 1);
   };
 
   return (
@@ -45,6 +54,7 @@ const All = () => {
             rating={music.rating}
             onPlay={handlePlay}
             onStop={handleStop}
+            onEnd={() => handleEnd(index)}
           />
         ))}
       </MainGrid>
