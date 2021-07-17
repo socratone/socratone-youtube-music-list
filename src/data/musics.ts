@@ -1,5 +1,8 @@
 import { Music } from '../types/music';
 import sadness from './sadness';
+import resolve from './resolve';
+import hope from './hope';
+import unclassified from './unclassified';
 // import metal from './metal';
 // import rock from './rock';
 // import pop from './pop';
@@ -24,4 +27,8 @@ const musics: Music[] = [
   // },
 ];
 
-export default musics.concat(sadness);
+export default musics
+  .concat(sadness)
+  .concat(resolve)
+  .concat(hope)
+  .concat(unclassified);

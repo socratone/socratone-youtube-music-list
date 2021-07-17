@@ -1,4 +1,4 @@
-export type Emotion = '슬픔' | '기쁨';
+export type Emotion = '슬픔' | '각오' | '희망' | '미분류';
 
 export type Music = {
   videoId: string;

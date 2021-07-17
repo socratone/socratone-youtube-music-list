@@ -13,6 +13,9 @@ function App() {
             <Row gap={15}>
               <LinkItem to="/">All</LinkItem>
               <LinkItem to="/sadness">슬픔</LinkItem>
+              <LinkItem to="/resolve">각오</LinkItem>
+              <LinkItem to="/hope">희망</LinkItem>
+              <LinkItem to="/unclassified">미분류</LinkItem>
             </Row>
           </Nav>
         </Header>
@@ -20,6 +23,15 @@ function App() {
         <Switch>
           <Route path="/sadness">
             <Emotion emotion="슬픔" />
+          </Route>
+          <Route path="/resolve">
+            <Emotion emotion="각오" />
+          </Route>
+          <Route path="/hope">
+            <Emotion emotion="희망" />
+          </Route>
+          <Route path="/unclassified">
+            <Emotion emotion="미분류" />
           </Route>
           <Route path="/">
             <All />

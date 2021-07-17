@@ -16,6 +16,13 @@ const sadness: Music[] = [
     rating: 5,
   },
   {
+    videoId: 'aO-3WmvWeZI',
+    artist: '손승연',
+    title: `I'm Not A Warrior`,
+    emotion: '슬픔',
+    rating: 5,
+  },
+  {
     videoId: 'ZQxwFzP9rsc',
     artist: '손승연',
     title: '혜야',
@@ -34,7 +41,7 @@ const sadness: Music[] = [
     artist: '손승연',
     title: '바람의 노래',
     emotion: '슬픔',
-    rating: 4,
+    rating: 3,
   },
   {
     videoId: 'bQDGBgDrFv0',
@@ -42,6 +49,13 @@ const sadness: Music[] = [
     title: '사랑, 결코 시들지 않는',
     emotion: '슬픔',
     rating: 4,
+  },
+  {
+    videoId: 'byumNPxw4ag',
+    artist: '박정현',
+    title: 'Someone Like You',
+    emotion: '슬픔',
+    rating: 1,
   },
   {
     videoId: 'm3DZsBw5bnE',
@@ -58,39 +72,32 @@ const sadness: Music[] = [
     rating: 3,
   },
   {
-    videoId: 'aO-3WmvWeZI',
-    artist: '손승연',
-    title: `I'm Not A Warrior`,
-    emotion: '슬픔',
-    rating: 5,
-  },
-  {
-    videoId: 'OL4LNg-iyY4',
-    artist: 'P!NK',
-    title: `Wild Hearts Can't Be Broken`,
-    emotion: '슬픔',
-    rating: 5,
-  },
-  {
-    videoId: 'mw5VIEIvuMI',
-    artist: 'Naomi Scott',
-    title: 'Speechless',
-    emotion: '슬픔',
-    rating: 4,
-  },
-  {
-    videoId: 'L0MK7qz13bU',
-    artist: 'Frozen',
-    title: 'Let It Go',
-    emotion: '슬픔',
-    rating: 4,
-  },
-  {
     videoId: 'fV4DiAyExN0',
     artist: 'Hoobastank',
     title: 'The Reason',
     emotion: '슬픔',
     rating: 4,
+  },
+  {
+    videoId: '6wWvCs23cKs',
+    artist: 'Mika',
+    title: 'Happy Ending',
+    emotion: '슬픔',
+    rating: 5,
+  },
+  {
+    videoId: 'iQeXKHZWTTg',
+    artist: 'Hedwig',
+    title: 'Wicked Little Town',
+    emotion: '슬픔',
+    rating: 5,
+  },
+  {
+    videoId: 'FUDNfZhAvCI',
+    artist: 'Green Day',
+    title: 'Wake Me Up When September Ends',
+    emotion: '슬픔',
+    rating: 3,
   },
 ];
 

@@ -86,20 +86,6 @@ const popRock: Music[] = [
   //   rating: 5,
   // },
   // {
-  //   videoId: 'FUDNfZhAvCI',
-  //   artist: 'Green Day',
-  //   title: 'Wake Me Up When September Ends',
-  //   genre: 'pop rock',
-  //   rating: 5,
-  // },
-  // {
-  //   videoId: 'RSSYnvRa0z8',
-  //   artist: 'Green Day',
-  //   title: '21 Guns',
-  //   genre: 'pop rock',
-  //   rating: 5,
-  // },
-  // {
   //   videoId: 'cpzO4OGP9q0',
   //   artist: 'Miley Cyrus',
   //   title: 'Wrecking Ball',
@@ -161,6 +147,13 @@ const popRock: Music[] = [
   //   title: 'Speechless',
   //   genre: 'pop rock',
   //   rating: 5,
+  // },
+  // {
+  //   videoId: 'RSSYnvRa0z8',
+  //   artist: 'Green Day',
+  //   title: '21 Guns',
+  //   emotion: '슬픔',
+  //   rating: 4,
   // },
 ];
 
